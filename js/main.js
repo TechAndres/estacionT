@@ -22,6 +22,7 @@ function alerts(){
           $("#alarms-description").html(last_alarm.description);
           $("#id-alert").html("ID: "+ last_alarm.id);
           $("#description-alert").html( last_alarm.description);
+          $("#alert-image").attr("src",last_alarm.image);
           // $("#station_img").css('transform','rotate('+90+'deg)');
           console.log(last_alarm);
           // $(v).each(function(index){

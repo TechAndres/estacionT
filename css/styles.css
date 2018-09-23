@@ -75,7 +75,9 @@ body{
   font-weight: bold;
   height: 60px;
 }
-
+.float-ico{
+  float: left;
+}
 .alarms-notifi {
   display: inline-block;
 }
@@ -125,7 +127,11 @@ body{
   margin-left: 1%;
   position: relative;
   top: -136px;
-  padding-top: 6px;
+  padding-top: 10px;
+}
+
+#body-3{
+  height: 100px;
 }
 
 .imgsize{
@@ -136,6 +142,23 @@ body{
 .alert-back{
   background-color: #FFEA61 !important;
   height: 513px;
+  margin-top: -8px;
+}
+ .row3-alert{
+   margin-top: 32px;
+ }
+
+#loading{
+  position: absolute;
+  z-index: 0;
+  margin-left: -40px;
+  margin-top: 50px ;
+}
+
+#alert-image{
+  position: absolute;
+  z-index: 1;
+  margin-left: -170px ;
 }
 
 #id-alert{
@@ -146,8 +169,9 @@ body{
 
 #description-alert{
   font-size: 20px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
+
 
 @media (max-width: 1300px) {
 
