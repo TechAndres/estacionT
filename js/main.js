@@ -1,5 +1,5 @@
 function station(){
-       $.get( "http://estaciont-backend.herokuapp.com/api/v1/stations", function(data) {
+       $.get( "http://localhost:3000/api/v1/stations", function(data) {
           console.log('sucess',data);
           first_station= data[1];
           $("#current_station").html(first_station.name);
@@ -15,7 +15,7 @@ function station(){
 }
 
 function alerts(){
-       $.get( "http://estaciont-backend.herokuapp.com/api/v1/stations/1/alerts", function(data) {
+       $.get( "http://localhost:3000/api/v1/stations/1/alerts", function(data) {
           console.log('sucess',data);
           last_alarm= data[data.length-1];
           $("#body-title").html("ID: "+ last_alarm.id);
