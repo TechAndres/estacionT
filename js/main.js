@@ -31,6 +31,22 @@ function alerts(){
         });
 }
 
+function usuario(){
+       $.get( "http://estaciont-backend.herokuapp.com/api/v1/stations", function(data) {
+          console.log('sucess',data);
+          first_station= data[1];
+          $("#current_station").html(first_station.name);
+          $("#station_img").attr("src",first_station.image_url);
+
+          // $("#station_img").css('transform','rotate('+90+'deg)');
+          console.log(first_station.id);
+          // $(v).each(function(index){
+          //   console.log( index );
+          // })
+         // $.get("#body-alarm").html(v[0]);
+        });
+}
+
 $(document).ready(function() {
     station();
     alerts();

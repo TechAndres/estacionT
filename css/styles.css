@@ -20,6 +20,11 @@ body{
 
 }
 
+#googlemaps{
+  padding: 0 !important;
+  margin-left: -52px !important;
+}
+
 #row1{
   width: 404.9px;
   height: 233.4px;
@@ -48,9 +53,10 @@ body{
 /* end row1 */
 /* beginning row2 */
 #row2{
-  margin-left: 1%;
+  margin-left: -62px;
   position: relative;
-  top: -120px;
+  top: 275px;
+  left: 7px;
 }
 
 .card{
@@ -106,7 +112,9 @@ body{
   margin-right: 10px;
 }
 
-
+.formulario{
+  margin-top: 100px;
+}
 
 .rutas-div{
   margin-top: 60px;
@@ -124,8 +132,7 @@ body{
   height: 233.4px;
   margin-left: 1%;
   position: relative;
-  top: -136px;
-  padding-top: 6px;
+  top: 422px;
 }
 
 .imgsize{
@@ -147,6 +154,15 @@ body{
 #description-alert{
   font-size: 20px;
   margin-top: 150px;
+}
+
+/*alerta usario*/
+
+.sizebutton {
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  margin: 15px;
 }
 
 @media (max-width: 1300px) {

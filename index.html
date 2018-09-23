@@ -12,84 +12,18 @@
                 <div class="row justify-content-center" id="first-row">
                   <div class="col-5">
 
-                    <!-- header -->
-                    <div class="row " id="row1">
-                          <div class="">
-                            <h2>ESTACION ASIGNADA</h2>
-                            <div id ="current_station"></div>
-                          </div>
-                          <img src="images/alarma-icon.png" alt="a-icon" id="alarma-icon" width="80px"  height="80px">
-                    </div>
-                    <!-- header -->
                     <!-- cards -->
 
                     <div class="row text-center" id="row2">
                       <!-- cards 1 -->
-                        <div class="card order-2">
-                            <div class="card-header " id="carheader1">
-                                          FlUJO EN EL TIEMPO
-                                          <div class="alarms-notifi">
-                                            <img src="images/ico-time.png" alt="alarm" width="40px">
-                                          </div>
-                                    <img src="images/button-time.png" alt="alarm-button" width="30px" id="button-time">
-                            </div>
-                            <div class="card-body">
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
+                        <div class="col" >
+                          <iframe id="googlemaps"  src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983"
+                           width="398" height="640" ></iframe>
                         </div>
+                    </div>
                         <!-- cards 1 -->
                         <!-- cards 2 -->
-                        <div class="card order-1">
-                            <div class="card-header align-item-content text-center" id="carheader2">
-                                      ALARMAS
-                                  <div class="alarms-notifi">
-                                    <img src="images/alarma-icon.png" alt="alarm" width="40px">
-                                  </div>
-                            <a href="alerts.html">
-                              <img src="images/button-alarms.png" alt="alarm-button" width="30px" id="button-alarms">
-                            </a>
-                            </div>
-                            <div class="card-body" id="body-alarm">
-                                  <h5 class="card-title" id="body-title">Asdsdad</h5>
-                                  <p class="card-text" id="alarms-description"> to additional content.</p>
-                            </div>
-                        </div>
-                        <!-- cards 2 -->
-                          <!-- cards 3 -->
-                        <div class="card order-3">
-                          <div class="card-header" id="carheader3">
-                                RUTAS DE LA ESTACION
-                                <div class="alarms-notifi">
-                                  <img src="images/ico-routes.png" alt="alarm" width="40px">
-                                </div>
-                                <a data-toggle="modal" data-target="#exampleModalLong">
-                                  <img src="images/button-routes.png" alt="alarm-button" width="30px" id="button-alarms" >
-                                </a>
-                          </div>
-                          <div class="card-body" data-toggle="modal" data-target="#exampleModalLong">
-              <!-- Modal -->
-                          <div class="modal fade text center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="rutas-div">
-                                    <img src="" alt="routes" id="station_img" width="76%" height="80%" >
-                                  </div>
-                                </div>
-                                <div class="modal-footer">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <img src="images/ruta-plantilla.jpg" alt="routes" width="300px" height="90px">
-                        </div>
-                    </div>
-                    </div>
+
                     <!-- cards -->
                     <div class="row text-center" id="row3">
                       <div class="col order-1">
@@ -109,8 +43,9 @@
                         <img src="images/perfil.png" alt="perfil"  width="29px">
                       </div>
                     </div>
-                  </div>
+
                 </div>
+        </div>
    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
