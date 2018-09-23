@@ -8,84 +8,110 @@
 
   </head>
   <body>
-    <div class="container-fluid ">
-      <div class="row justify-content-center" id="row1">
-        <div class="col-4 col-centered " id="col-main">
-          <div class="background">
-            <div class="title">
-                    <h2>ESTACION ASIGNADA</h2>
-                    <h1>CALLE 71</h1>
-            </div>
-                    <img src="images/alarma-icon.png" alt="a-icon" id="alarma-icon">
-             </div>
-          <div class="row text-center" id="row2">
-          <div class="card">
-                  <div class="card-header " id="carheader1">
-                    FlUJO EN EL TIEMPO
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">sfasf</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-          </div>
-          <div class="card">
-                  <div class="card-header" id="carheader2">
-                    ALARMAS
-                  </div>
-                  <div class="card-body" id="body-alarm">
-                    <h5 class="card-title">Asdsdad</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-          </div>
-          <div class="card">
-                  <div class="card-header" id="carheader3">
-                    RUTAS DE LA ESTACION
-                  </div>
-                  <div class="card-body" data-toggle="modal" data-target="#exampleModalLong">
-                    <!-- Modal -->
-                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="container">
+                <div class="row justify-content-center" id="first-row">
+                  <div class="col-5">
+
+                    <!-- header -->
+                    <div class="row " id="row1">
+                          <div class="">
+                            <h2>ESTACION ASIGNADA</h2>
+                            <div id ="current_station"></div>
+                          </div>
+                          <img src="images/alarma-icon.png" alt="a-icon" id="alarma-icon" width="80px"  height="80px">
+                    </div>
+                    <!-- header -->
+                    <!-- cards -->
+
+                    <div class="row text-center" id="row2">
+                      <!-- cards 1 -->
+                        <div class="card order-2">
+                            <div class="card-header " id="carheader1">
+                                          FlUJO EN EL TIEMPO
+                                          <div class="alarms-notifi">
+                                            <img src="images/ico-time.png" alt="alarm" width="40px">
+                                          </div>
+                                    <img src="images/button-time.png" alt="alarm-button" width="30px" id="button-time">
+                            </div>
+                            <div class="card-body">
+                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        <!-- cards 1 -->
+                        <!-- cards 2 -->
+                        <div class="card order-1">
+                            <div class="card-header align-item-content text-center" id="carheader2">
+                                      ALARMAS
+                                  <div class="alarms-notifi">
+                                    <img src="images/alarma-icon.png" alt="alarm" width="40px">
+                                  </div>
+                            <a href="alerts.html">
+                              <img src="images/button-alarms.png" alt="alarm-button" width="30px" id="button-alarms">
+                            </a>
+                            </div>
+                            <div class="card-body" id="body-alarm">
+                                  <h5 class="card-title" id="body-title">Asdsdad</h5>
+                                  <p class="card-text" id="alarms-description"> to additional content.</p>
+                            </div>
+                        </div>
+                        <!-- cards 2 -->
+                          <!-- cards 3 -->
+                        <div class="card order-3">
+                          <div class="card-header" id="carheader3">
+                                RUTAS DE LA ESTACION
+                                <div class="alarms-notifi">
+                                  <img src="images/ico-routes.png" alt="alarm" width="40px">
+                                </div>
+                                <a data-toggle="modal" data-target="#exampleModalLong">
+                                  <img src="images/button-routes.png" alt="alarm-button" width="30px" id="button-alarms" >
+                                </a>
+                          </div>
+                          <div class="card-body" data-toggle="modal" data-target="#exampleModalLong">
+              <!-- Modal -->
+                          <div class="modal fade text center" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <div class="rutas-div">
+                                    <img src="" alt="routes" id="station_img" width="76%" height="80%" >
+                                  </div>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                               </div>
                             </div>
                           </div>
-
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <img src="images/ruta-plantilla.jpg" alt="routes" width="300px" height="90px">
+                        </div>
+                    </div>
+                    </div>
+                    <!-- cards -->
+                    <div class="row text-center" id="row3">
+                      <div class="col order-1">
+                        <a href="index.html">
+                          <img src="images/home.png" alt="home"  width="30px">
+                        </a>
+                      </div>
+                      <div class="col order-3">
+                        <img src="images/rutas.png" alt="rutas"  width="29px">
+                      </div>
+                      <div class="col order-2">
+                        <a href="alerts.html">
+                          <img src="images/alarma.png" alt="alarmas" class="imgsize" width="34px">
+                        </a>
+                      </div>
+                      <div class="col order-4">
+                        <img src="images/perfil.png" alt="perfil"  width="29px">
+                      </div>
+                    </div>
                   </div>
-          </div>
-        </div>
-        <div class="row align-items-center justify-content-center text-center" id="row3">
-          <div class="col">
-            <img src="images/home.png" alt="home" class="imgsize">
-          </div>
-          <div class="col">
-            <img src="images/rutas.png" alt="rutas" class="imgsize">
-          </div>
-          <div class="col">
-            <img src="images/alarma.png" alt="alarmas" class="imgsize">
-          </div>
-          <div class="col">
-            <img src="images/perfil.png" alt="perfil" class="imgsize">
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-
+                </div>
+   </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
