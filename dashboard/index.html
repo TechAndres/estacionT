@@ -108,6 +108,7 @@
       spinner.hide();
       function makeScreenshots(){
               spinner.show();
+              box.html("");
              $.post( "http://localhost:3000/api/v1/screenshots", function(data) {
                 console.log('sucess',data);
 
